@@ -1,3 +1,13 @@
+Contains a patch on the original Django 1.9.2 for supporting MySQL functions
+that operate on real geometries (rather than mere bounding boxes). This support
+activates only when the MySQL version is > 5.6.1.
+
+To install just do:
+
+.. code-block:: bash
+pip install --upgrade https://github.com/shiviser/django/raw/1.9.2_ST_build/dist/Django-1.9.2-py2.py3-none-any.whl
+
+
 Django is a high-level Python Web framework that encourages rapid development
 and clean, pragmatic design. Thanks for checking it out.
 

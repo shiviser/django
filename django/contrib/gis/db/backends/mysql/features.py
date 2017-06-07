@@ -20,4 +20,4 @@ class DatabaseFeatures(BaseSpatialFeatures, MySQLDatabaseFeatures):
     # to take advantage of MySQL proper ST_ functions
     @property
     def supports_real_shape_operations(self):
-	return self.connection.mysql_version >= (5, 6, 1)
+        return self.connection.mysql_version >= (5, 6, 1)
